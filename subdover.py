@@ -31,7 +31,7 @@ class subdover:
         self.httpx_path = self.subdover_dir + "externals/httpx.exe"
 
     def start(self):
-        print(f"\t\t{Fore.YELLOW}Author: {Fore.GREEN}Pushpender Singh  | {Fore.YELLOW}GitHub: {Fore.GREEN}PushpenderIndia\n{Fore.WHITE}")
+        print(f"\t\t{Fore.YELLOW}Author: {Fore.GREEN}trhacknon  | {Fore.YELLOW}GitHub: {Fore.GREEN}trhacknon\n{Fore.WHITE}")
         self.arguments = self.get_arguments() 
 
         self.check_and_update() # On each run, it will check for updates, and will update using git if update available
@@ -152,7 +152,7 @@ class subdover:
     def check_and_update(self):            
         try:
             print(f"{Fore.YELLOW}[*] Checking Updates ... {Style.RESET_ALL}")
-            ongoing_version = requests.get("https://raw.githubusercontent.com/PushpenderIndia/subdover/master/version.txt")
+            ongoing_version = requests.get("https://raw.githubusercontent.com/trhacknon/subdover/master/version.txt")
         except Exception:
             print(f"{Fore.WHITE}[{Fore.RED}ERR{Fore.WHITE}] No Internet Connection{Style.RESET_ALL}")
             print(f"{Fore.WHITE}[{Fore.YELLOW}*{Fore.WHITE}] Quitting ...")
